@@ -178,14 +178,14 @@ Recall from Part 1 that we need to find accesses of attributes of the `flask.req
 >
 >```javascript
 > /**
->  * @id flask-request-attribute-acccess
+> * @id flask-request-attribute-acccess
 > * @severity error
 > * @kind problem
 > */
 >
 > import python
 >
-> from Attribute a where 
+> from Attribute a 
 > where 
 > select a, "request." + a.getAttr()
 > ```
@@ -205,7 +205,7 @@ Let's use CodeQL's object-oriented features and create a class.
 >
 >```javascript
 > /**
->  * @id flask-request-attribute-acccess
+> * @id flask-request-attribute-acccess
 > * @severity error
 > * @kind problem
 > */
@@ -214,7 +214,7 @@ Let's use CodeQL's object-oriented features and create a class.
 >
 > class RequestAttribute extends Attribute {
 >     RequestAttribute() {
->        this.getObject().toString() = "request"
+>        
 >     }
 >  }
 > 
@@ -315,5 +315,5 @@ Again, our query works perfectly for our target pgAdmin 4, but is generally not 
 
 ## Conclusion and further reading
 
-I hoped you enjoyed this tutorial. For questions, feel free to reach out to myfirstname.mylastname@ncsc.nl. Here are some resources that might be interesting for further reading:
+I hoped you enjoyed this tutorial! For questions, feel free to reach out to myfirstname.mylastname@ncsc.nl. Here are some resources that might be interesting for further reading:
 - TODO
