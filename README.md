@@ -163,7 +163,7 @@ pgadmin4-REL-6_16/web/pgadmin/misc/__init__.py
           224┆ subprocess.getoutput('"{0}"  
                --version'.format(full_path))
 ```
-If you get something similar: well-done! The rule we've now developed works in this particular case and demonstrates some of the key features of Semgrep. It is, however, still far from refined and may give many false-positives in practice. For a more robust solution, I recommend you to check out [the corresponding rule in the official Semgrep rule database](https://github.com/semgrep/semgrep-rules/blob/develop/python/flask/security/injection/subprocess-injection.yaml). 
+If you get something similar: well done! The rule we've now developed works in this particular case and demonstrates some of the key features of Semgrep. It is, however, still far from refined and may give many false-positives in practice. For a more robust solution, I recommend you to check out [the corresponding rule in the official Semgrep rule database](https://github.com/semgrep/semgrep-rules/blob/develop/python/flask/security/injection/subprocess-injection.yaml). 
 
 ## Part 2: writing your own CodeQL query
 
@@ -316,4 +316,7 @@ Again, our query works perfectly for our target pgAdmin 4, but is generally not 
 ## Conclusion and further reading
 
 I hoped you enjoyed this tutorial! For questions, feel free to reach out to myfirstname.mylastname@ncsc.nl. Here are some resources that might be interesting for further reading:
-- TODO
+- Technical information about the vulnerability in Ivanti (technical): https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce
+- Also about the vulnerability in Ivanti, but from a more threat analytical perspective: https://cloud.google.com/blog/topics/threat-intelligence/suspected-apt-targets-ivanti-zero-day/
+- Using CodeQL for offensive security: https://www.youtube.com/watch%3Fv%3D-bJ2Ioi7Icg&ved=2ahUKEwiAlMWEkpiJAxWq1QIHHbfrN3EQwqsBegQICxAF&usg=AOvVaw06tjK7XsK8vv_fbOMLsXnj
+- An empirical study on the effectiveness of query-based SAST-tools (paywalled): https://ieeexplore.ieee.org/document/10400834
