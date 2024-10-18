@@ -318,5 +318,5 @@ Again, our query works perfectly for our target pgAdmin 4, but is generally not 
 I hoped you enjoyed this tutorial! For questions, feel free to reach out to myfirstname.mylastname@ncsc.nl. Here are some resources that might be interesting for further reading:
 - Technical information about the vulnerability in Ivanti (technical): https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce
 - Also about the vulnerability in Ivanti, but from a more threat analytical perspective: https://cloud.google.com/blog/topics/threat-intelligence/suspected-apt-targets-ivanti-zero-day/
-- Using CodeQL for offensive security: https://www.youtube.com/watch%3Fv%3D-bJ2Ioi7Icg&ved=2ahUKEwiAlMWEkpiJAxWq1QIHHbfrN3EQwqsBegQICxAF&usg=AOvVaw06tjK7XsK8vv_fbOMLsXnj
+- Using CodeQL for offensive security: https://www.youtube.com/watch?v=-bJ2Ioi7Icg
 - An empirical study on the effectiveness of query-based SAST-tools (paywalled): https://ieeexplore.ieee.org/document/10400834
